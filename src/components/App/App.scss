@@ -1,0 +1,49 @@
+//======================= import ========================
+
+@import '../../vars';
+
+//=======================================================
+
+
+//=================== default styles ====================
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration-skip-ink: none;
+    li {
+        list-style: none;
+    }
+a {
+    text-decoration: none;
+}
+    // user-select: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 15px;
+    height: 100%;
+}
+body {
+    font-family: $font-regular;
+    font-size: 15px;
+    color: #000000;
+    height: 100%;
+}
+
+._container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+//=======================================================

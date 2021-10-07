@@ -1,0 +1,224 @@
+//======================= import ========================
+
+@import '../../vars';
+
+//=======================================================
+
+
+//======================= styles ========================
+
+//------------------------ goods ------------------------
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.goods {
+    flex: 1 0 auto;
+    margin-bottom: 50px;
+}
+
+.goods-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block-goods {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 25px 25px 0px;
+    padding: 25px;
+    background-color: rgba(0,0,0, 0.03);
+    &__img {
+        margin-bottom: 20px;
+    }
+    &__title {
+        font-family: $font-bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    &__cost {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    &__btn {
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        font-family: $font-bold;
+        text-transform: uppercase;
+        font-size: 16px;
+        border: none;
+        background-color: rgb(48,177,68);
+        padding: 15px 15px;
+        color: #ffffff;
+        
+    } 
+}
+
+//-------------------------------------------------------
+
+//------------------------ cart -------------------------
+
+.cart {
+    flex: 1 0 auto;
+    margin-top: 50px;
+}
+
+.cart-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-block {
+    flex: 0 0 100%;
+    &__title {
+        font-family: $font-bold;
+        text-transform: uppercase;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }    
+}
+
+.table-block {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+    &__cell {
+        font-family: $font-bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        height: 50px;
+        &_btn {
+            font-family: $font-bold;
+            font-size: 30px;
+            cursor: pointer;
+            height: 40px;
+            width: 40px;
+            border: 0;
+            color: rgb(255, 255, 255);
+            transition: all .3s ease;
+            
+        }
+        ._minus {
+           
+        }
+        ._delete {
+
+        }
+    }
+}
+
+.cart-sum {
+    display: flex;
+    justify-content: flex-end;
+    &__sum {
+        font-family: $font-bold;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+}
+
+//-------------------------------------------------------
+
+//=======================================================
+
+
+//======================== media ========================
+
+@media (min-width: 992px) {
+
+//------------------------ goods ------------------------
+
+    .block-goods {
+        &__btn {
+            transition: all .3s ease;
+            &:hover {
+                border-color: #000000;
+                color: #ffffff;
+                background-color: rgb(20,227,52);
+                box-shadow: 2px 2px 10px rgba(#000000,.24);
+                border-radius: 30px;
+                transition: all .9 ease;
+            }
+        }
+    }
+
+//-------------------------------------------------------
+
+//------------------------ cart -------------------------
+
+    .table-block {
+        &__cell {
+            ._minus {
+                &:hover {
+                    background-color: rgb(128, 128, 128);
+                }
+            }
+            ._delete {
+                background-color: rgba(255,0,0,.34);
+                &:hover {
+                    background-color: rgb(255, 0, 0);
+                }
+            }
+        }
+    }
+
+//-------------------------------------------------------
+
+}
+
+@media (max-width: 992px) {
+
+//------------------------ cart -------------------------
+
+    .table-block {
+        &__cell {
+            ._minus {
+                background-color: rgb(128, 128, 128);
+            }
+            ._delete {
+                background-color: rgb(255, 0, 0);
+            }
+        }
+    }
+
+//-------------------------------------------------------
+
+}
+
+@media (max-width: 576px) {
+
+//------------------------ cart -------------------------
+
+    .table-block {
+        &__cell {
+            font-size: 12px;
+            &_btn {
+               font-size: 20px;
+               height: 30px;
+               width: 30px;
+            }
+        }
+    }
+    .cart-sum {
+        justify-content: center;
+    }
+
+//-------------------------------------------------------
+
+}
+
+//=======================================================

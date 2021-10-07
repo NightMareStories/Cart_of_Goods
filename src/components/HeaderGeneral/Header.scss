@@ -1,0 +1,90 @@
+//====================== import ========================
+
+@import '../../vars';
+
+//======================================================
+
+
+//====================== styles ========================
+
+.general-header {
+    padding: 18px 0;
+    box-shadow: 0 0 25px rgba(#000000,.25);
+    margin-bottom: 150px;
+
+//---------------------- main --------------------------
+
+    .top-header {
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+    }
+    .header-info {
+        display: flex;
+        align-items: center;
+        &__logo {
+            &_img {
+                width: 57px;
+                height: 57px;
+                border-radius: 50%;
+            }
+        }
+        &__text {
+            padding-left: 9px;
+            &_username {
+                font-family: $font-bold;
+                font-size: 16px;
+                line-height: 18px;
+                color: #000000;
+                margin-bottom: 3px;
+            } 
+            &_userprof {
+                font-size: 12px;
+                color: rgba(#2b2a2c, .7);
+            }
+        }
+    }
+            //------------------------------------------------------
+    
+    
+            //------------------------ nav -------------------------
+        .actions-header {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            &__link {
+                font-family: $font-bold;
+                margin: 10px 20px;
+                position: relative;
+                font-size: 14px;
+                color: #000000;
+                text-transform: uppercase;
+                &::after {
+                    content: '';
+                    width: 0;
+                    height: 2px;
+                    background-color: #000000;
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    z-index: 1;
+                    transition: width 0.3s linear;
+        
+                }
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }            
+            }     
+        }
+        
+        //------------------------------------------------------
+    
+
+        }   
+       
+//======================================================
