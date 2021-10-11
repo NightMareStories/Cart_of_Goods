@@ -307,7 +307,7 @@ export default Cart;
 ---
 &nbsp;
 
-# 4. Вывод
+# 4. Заключение
 &nbsp;
 
 ---
