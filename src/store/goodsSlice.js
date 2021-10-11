@@ -9,6 +9,5 @@ export const goodsSlice = createSlice({
     reducers: {}
 });
 
-// export const { } = goodsSlice.actions;
 export const selectGoods = state => state.goods.goods;
 export default goodsSlice.reducer;
