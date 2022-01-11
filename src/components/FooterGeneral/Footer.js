@@ -10,7 +10,7 @@ function Footer(props) {
                             &copy; 2021 Poteryaev Aleksandr
                         </div>
                         <div className="g-block-footer__project">
-                            <h3 className="g-block-footer__project_title">Project: <span>Exchange Rates</span></h3>
+                            <h3 className="g-block-footer__project_title">Project: <span>Cart of Goods</span></h3>
                         </div>
                     </div>
                     <nav className="g-block-footer__nav">
