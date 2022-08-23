@@ -26,8 +26,8 @@ function Header() {
                         <div className="g-header-nav__content">
                 <nav className="g-header-nav__column">
                     <ul className="g-header-nav__actions g-actions-header">
-                        <li><a href='/' className="g-actions-header__link"><span>GitHub</span></a></li>
-                        <li><a href='/' className="g-actions-header__link"><span>My Portfolio</span></a></li>
+                        <li><a href='https://github.com/NightMareStories/Cart-of-Goods.git' className="g-actions-header__link" target="_blank" rel="noopener noreferrer"><span>GitHub</span></a></li>
+                        <li><a href='http://about-my-portfolio.site' className="g-actions-header__link" target="_blank" rel="noopener noreferrer"><span>My Portfolio</span></a></li>
                     </ul >
                 </nav >
             </div >
