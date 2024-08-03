@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectGoods } from '../store/goodsSlice';
 import { selectCart } from '../store/cartSlice';
-import { minus, remove } from "../store/cartSlice";
+import { minus, remove } from '../store/cartSlice';
 import Cart from '../components/Cart/Cart';
 
 function CartList() {
@@ -10,7 +10,7 @@ function CartList() {
     const cart = useSelector(selectCart);
     const dispatch = useDispatch();
 
-    //переиндексирую массив товара
+    // Reindexing the product array
     const goodsObj = goods.reduce((accum, item) => {
         accum[item['articul']] = item;
         return accum;
@@ -27,7 +27,7 @@ function CartList() {
         }
     }
     return (
-        <div className="cart"> 
+        <div className="cart">
             <div className="cart-field _container">
                 <div className="cart-field__cart cart-block">
                     <h2 className="cart-block__title">Cart</h2>
@@ -41,14 +41,14 @@ function CartList() {
                                     <th className="table-block__cell">Price</th>
                                     <th className="table-block__cell">Quantity</th>
                                 </tr>
-                            {Object.keys(cart).map(item => <Cart title={goodsObj[item]['title']} cost={goodsObj[item]['cost']} key={item + goodsObj[item]['title']} count={cart[item]} articul={goodsObj[item]['articul']} img={goodsObj[item]['image']} />)}
+                                {Object.keys(cart).map(item => <Cart title={goodsObj[item]['title']} cost={goodsObj[item]['cost']} key={item + goodsObj[item]['title']} count={cart[item]} articul={goodsObj[item]['articul']} img={goodsObj[item]['image']} />)}
                             </tbody>
                             <tfoot></tfoot>
                         </table>
                     </div>
                 </div>
                 <div className="cart-field__sum cart-sum">
-                    <h3 className="cart-sum__sum">Sum:   {Object.keys(cart).reduce((accum, item) => { return accum = accum + goodsObj[item]['cost'] * cart[item]}, 0).toFixed(2)} $</h3>
+                    <h3 className="cart-sum__sum">Sum:   {Object.keys(cart).reduce((accum, item) => { return accum = accum + goodsObj[item]['cost'] * cart[item] }, 0).toFixed(2)} $</h3>
                 </div>
             </div>
         </div>

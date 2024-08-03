@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectGoods } from '../store/goodsSlice';
 import Goods from '../components/Goods/Goods';
@@ -22,14 +22,14 @@ function GoodsList() {
 
     return (
         <>
-        <div className="goods">
-            <div className="goods-field _container">
-                <div className="goods-field__goods goods-block" onClick={clickHandler}>
-                    {goods.map(item => <Goods title={item.title} cost={item.cost} image={item.image}
-                    articul={item.articul} key={item.articul} />)}
+            <div className="goods">
+                <div className="goods-field _container">
+                    <div className="goods-field__goods goods-block" onClick={clickHandler}>
+                        {goods.map(item => <Goods title={item.title} cost={item.cost} image={item.image}
+                            articul={item.articul} key={item.articul} />)}
+                    </div>
                 </div>
             </div>
-        </div>
         </>
     );
 }

@@ -9,8 +9,8 @@ function Header() {
                         <div className="g-top-header__column g-header-info">
                             <div className="g-header-info__logo">
                                 <picture>
-                                    <source srcSet="img/logo-img.webp" type="image/webp" className="g-header-info__logo_img" />
-                                    <img src="img/logo-img.png" alt="logo-img" className="g-header-info__logo_img" />
+                                    <source srcSet="/img/logo-img.webp" type="image/webp" className="g-header-info__logo_img" />
+                                    <img src="/img/logo-img.png" alt="logo-img" className="g-header-info__logo_img" />
                                 </picture>
                             </div>
                             <div className="g-header-info__text">
@@ -23,14 +23,14 @@ function Header() {
                             </div>
                         </div>
                         <div className="g-top-header__column g-header-nav">
-                        <div className="g-header-nav__content">
-                <nav className="g-header-nav__column">
-                    <ul className="g-header-nav__actions g-actions-header">
-                        <li><a href='https://github.com/NightMareStories/Cart-of-Goods.git' className="g-actions-header__link" target="_blank" rel="noopener noreferrer"><span>GitHub</span></a></li>
-                        <li><a href='http://about-my-portfolio.site' className="g-actions-header__link" target="_blank" rel="noopener noreferrer"><span>My Portfolio</span></a></li>
-                    </ul >
-                </nav >
-            </div >
+                            <div className="g-header-nav__content">
+                                <nav className="g-header-nav__column">
+                                    <ul className="g-header-nav__actions g-actions-header">
+                                        <li><a href='https://github.com/NightMareStories/Cart_of_Goods.git' className="g-actions-header__link" target="_blank" rel="noopener noreferrer"><span>GitHub</span></a></li>
+                                        <li><a href='http://about-my-portfolio.site' className="g-actions-header__link" target="_blank" rel="noopener noreferrer"><span>My Portfolio</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div >
                         </div>
                     </div>
                 </div>

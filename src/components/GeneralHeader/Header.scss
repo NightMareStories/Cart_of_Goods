@@ -1,48 +1,53 @@
-//====================== import ========================
+/*====================== Import =========================*/
 
 @import '../../vars';
 
-//======================================================
+/*=======================================================*/
 
 
-//====================== styles ========================
+/*==================== Main styles ======================*/
 
-.general-header {
+html body .general-header {
+    height: 97px;
+    line-height: 1.5;
     padding: 18px 0;
-    box-shadow: 0 0 25px rgba(#000000,.25);
     margin-bottom: 150px;
+    box-shadow: 0 0 25px rgba(#000000, .25);
 }
 
-//---------------------- main --------------------------
+/*----------------------- Main --------------------------*/
 
-.g-top-header {
+html body .g-top-header {
     &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
     }
 }
 
-.g-header-info {
+html body .g-header-info {
     display: flex;
     align-items: center;
+
     &__logo {
         &_img {
-            width: 57px;
             height: 57px;
+            width: 57px;
             border-radius: 50%;
         }
     }
+
     &__text {
         padding-left: 9px;
+
         &_username {
             font-family: $font-bold;
-            font-size: 16px;
             line-height: 18px;
-            color: #000000;
+            font-size: 16px;
             margin-bottom: 3px;
-        } 
+            color: #000000;
+        }
+
         &_userprof {
             font-size: 12px;
             color: rgba(#2b2a2c, .7);
@@ -50,63 +55,83 @@
     }
 }
 
-//------------------------------------------------------
+/*-------------------------------------------------------*/
 
-//------------------------ nav -------------------------
+/*----------------------- Nav ---------------------------*/
 
-.g-actions-header {
+html body .g-header-nav {
+    height: 24px;
+}
+
+html body .g-actions-header {
     display: flex;
-    height: 100%;
     align-items: center;
+    height: 100%;
+
     li {
         margin: 0px 20px 0px 0px;
+
         &:last-child {
             margin: 0;
-        }   
+        }
     }
+
     &__link {
-        font-family: $font-bold;
-        
         position: relative;
+        font-family: $font-bold;
+        line-height: normal;
         font-size: 14px;
         color: #000000;
         text-transform: uppercase;
+
         &::after {
             content: '';
-            width: 0;
-            height: 2px;
-            background-color: #000000;
             position: absolute;
             bottom: -2px;
             left: 0;
             z-index: 1;
+            height: 2px;
+            width: 0;
+            background-color: #000000;
             transition: width 0.3s linear;
-
         }
+
         &:hover {
+            background-color: transparent;
+            color: #000000;
+
             &::after {
                 width: 100%;
             }
-        }            
-    }     
+        }
+    }
 }
 
-//------------------------------------------------------ 
-    
-//======================================================
+/*-------------------------------------------------------*/
+
+/*=======================================================*/
 
 
-//======================== media ========================
+/*======================= Media =========================*/
 
 @media (max-width: 576px) {
-    .g-header-nav {
+    html body .general-header {
+        height: auto;
+        line-height: normal;
+    }
+
+    html body .g-header-nav {
+        height: auto;
         margin: 0px 0px 0px 5px;
     }
-    .g-actions-header {
+
+    html body .g-actions-header {
         flex-direction: column;
         text-align: center;
+
         li {
             margin: 0px 0px 10px 0px;
+
             &:last-child {
                 margin: 0;
             }
@@ -114,4 +139,4 @@
     }
 }
 
-//=======================================================
+/*=======================================================*/

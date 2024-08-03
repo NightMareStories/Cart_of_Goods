@@ -1,14 +1,16 @@
-import Main from "../Main/Main";
-import HeaderGeneral from "../HeaderGeneral/Header";
-import FooterGeneral from "../FooterGeneral/Footer";
 import './App.scss';
+import Main from '../Main/Main';
+import '../ComponentsReset.scss';
+import '../Components.scss';
+import GeneralHeader from '../GeneralHeader/Header';
+import GeneralFooter from '../GeneralFooter/Footer';
 
 function App() {
   return (
     <>
-      <HeaderGeneral />
+      <GeneralHeader />
       <Main />
-      <FooterGeneral />
+      <GeneralFooter />
     </>
   );
 }

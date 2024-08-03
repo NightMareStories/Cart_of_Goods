@@ -3,60 +3,60 @@
         "articul": "284s",
         "title": "Apple",
         "cost": 1.25,
-        "image": "./img/apple-img.png"
+        "image": "/img/apple-img.png"
     },
     {
         "articul": "778d",
         "title": "Lemon",
         "cost": 2.99,
-        "image": "./img/lemon-img.png"
+        "image": "/img/lemon-img.png"
     },
     {
         "articul": "928t",
         "title": "Orange",
         "cost": 1.49,
-        "image": "./img/orange-img.png"
+        "image": "/img/orange-img.png"
     },
     {
         "articul": "273k",
         "title": "Pear",
         "cost": 2.59,
-        "image": "./img/pear-img.png"
+        "image": "/img/pear-img.png"
     },
     {
         "articul": "989p",
         "title": "Kiwi",
         "cost": 3.29,
-        "image": "./img/kiwi-img.png"
+        "image": "/img/kiwi-img.png"
     },
     {
         "articul": "328e",
         "title": "Banana",
         "cost": 1.95,
-        "image": "./img/banana-img.png"
+        "image": "/img/banana-img.png"
     },
     {
         "articul": "852b",
         "title": "Watermelon",
         "cost": 4.55,
-        "image": "./img/watermelon-img.png"
+        "image": "/img/watermelon-img.png"
     },
     {
         "articul": "123w",
         "title": "Grape",
         "cost": 2.19,
-        "image": "./img/grape-img.png"
+        "image": "/img/grape-img.png"
     },
     {
         "articul": "453x",
         "title": "Strawberry",
         "cost": 3.09,
-        "image": "./img/strawberry-img.png"
+        "image": "/img/strawberry-img.png"
     },
     {
         "articul": "552c",
         "title": "Cherry",
         "cost": 2.79,
-        "image": "./img/cherry-img.png"
+        "image": "/img/cherry-img.png"
     }
 ]

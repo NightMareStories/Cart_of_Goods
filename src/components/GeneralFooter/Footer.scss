@@ -1,0 +1,160 @@
+/*====================== Import =========================*/
+
+@import '../../vars';
+
+/*=======================================================*/
+
+
+/*==================== Main styles ======================*/
+
+html body .general-footer {
+    flex: 0 0 auto;
+    height: 64px;
+    line-height: 24px;
+    padding: 20px 0px;
+    margin-top: 150px;
+    background-color: #000000;
+    box-shadow: 0 -5px 10px rgba(#000000, .60);
+}
+
+/*----------------------- Main --------------------------*/
+
+html body .g-block-footer {
+    display: flex;
+    justify-content: space-between;
+
+    &__credits {
+        display: flex;
+        align-items: center;
+    }
+
+    &__project {
+        display: flex;
+        align-items: center;
+
+        &_title {
+            display: inline-block;
+            text-align: center;
+            font-family: $font-extra-light;
+            font-size: 20px;
+            color: #8d8d8e;
+
+            span {
+                font-family: $font-bold;
+                color: #ff0000db;
+            }
+        }
+    }
+
+    &__copyrights {
+        font-size: 14px;
+        padding-right: 20px;
+        margin-right: 20px;
+        color: #8d8d8e;
+        border-right: 2px solid rgba(#6a696b, .6);
+    }
+}
+
+/*-------------------------------------------------------*/
+
+/*----------------------- Nav ---------------------------*/
+
+html body .g-actions-footer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &__link {
+        font-size: 14px;
+        margin-right: 20px;
+        color: #8d8d8e;
+        text-transform: capitalize;
+
+        &:hover {
+            color: #bbbbcc;
+        }
+
+        &_btn {
+            font-family: $font-bold;
+            line-height: 1.1;
+            padding: 10px 25px;
+            margin: 10px 30px;
+            border: 2px solid #8d8d8e;
+            border-radius: 20px;
+            text-transform: uppercase;
+            transition:
+                background-color .2s linear, color .2s linear;
+
+            &:hover {
+                background-color: #bbbbcc;
+                color: #000000;
+            }
+        }
+
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+}
+
+/*-------------------------------------------------------*/
+
+/*=======================================================*/
+
+
+/*======================= Media =========================*/
+
+@media (max-width: 790px) {
+    html body .general-footer {
+        height: auto;
+        line-height: normal;
+    }
+
+    html body .g-block-footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        &__credits {
+            margin: 20px 0px 0px 0px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    html body .g-block-footer {
+        &__credits {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px 0px 0px;
+        }
+
+        &__copyrights {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__project {
+            margin: 0px 0px 20px 0px;
+
+            &_title {
+                font-size: 18px;
+            }
+        }
+    }
+
+    html body .g-actions-footer {
+        &__link {
+            margin-right: 10px;
+
+            &:last-child {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+/*=======================================================*/

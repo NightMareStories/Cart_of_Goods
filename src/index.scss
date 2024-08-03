@@ -1,19 +1,22 @@
-//================= add-font-mixin =====================
+/*================== Add fonts mixin ====================*/
 
 @mixin font($font_name, $file_name, $weight, $style) {
     @font-face {
-    font-family: $font_name;
-    font-display: swap;
-    src: url("./fonts/#{$file_name}.woff") format("woff"), url("./fonts/#{$file_name}.woff2") format("woff2");
-    font-weight: #{$weight};
-    font-style: #{$style};
+        font-family: $font_name;
+        font-display: swap;
+        src: url("/fonts/#{$file_name}.woff") format("woff"),
+        url("/fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
     }
 }
 
-//======================================================
+/*=======================================================*/
 
 
-//=============== paste-font-in-mixin ==================
+/*================ Paste fonts in mixin =================*/
+
+/*--------------------- Main fonts ----------------------*/
 
 @include font("Montserrat-Bold", "Montserrat-Bold", "700", "normal");
 @include font("Montserrat-ExtraLightItalic", "Montserrat-ExtraLightItalic", "200", "italic");
@@ -22,4 +25,4 @@
 @include font("Montserrat-Italic", "Montserrat-Italic", "100", "italic");
 @include font("Montserrat-Regular", "Montserrat-Regular", "400", "normal");
 
-//======================================================
+/*-------------------------------------------------------*/
