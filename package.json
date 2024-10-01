@@ -1,6 +1,6 @@
 {
   "name": "cart_of_goods",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "'Cart of Goods' - is an application written in 'ReactJS' and 'JavaScriptES6'. In this application, it is implemented and divided into components - a 'catalog of goods' to be added to the cart and the 'cart of goods' added to it",
   "private": true,
   "main": "index.js",

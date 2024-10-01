@@ -16,7 +16,7 @@ function Footer(props) {
                     <nav className="g-block-footer__nav">
                         <ul className="g-block-footer__actions g-actions-footer">
                             <li><a href='https://github.com/NightMareStories/Cart_of_Goods.git' className="g-actions-footer__link" target="_blank" rel="noopener noreferrer"><span>GitHub</span></a></li>
-                            <li><a href='http://about-my-portfolio.site' className="g-actions-footer__link" target="_blank" rel="noopener noreferrer"><span>My Portfolio</span></a></li>
+                            <li><a href='http://about-my-portfolio.website' className="g-actions-footer__link" target="_blank" rel="noopener noreferrer"><span>My Portfolio</span></a></li>
                         </ul>
                     </nav>
                 </div>
